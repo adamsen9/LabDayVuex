@@ -1,0 +1,9 @@
+<div>
+    <label v-if="formName" for="input">
+        {{formName}}
+        <input type="text" v-model="value">
+    </label>
+    <p v-if="!valid" style="color: red;">
+        {{errorText}}
+    </p>
+</div>

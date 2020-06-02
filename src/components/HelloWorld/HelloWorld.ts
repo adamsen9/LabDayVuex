@@ -10,4 +10,18 @@ import FormOne from '@/components/FormOne/FormOne';
     FormTwo,
   },
 })
-export default class HelloWorld extends Vue {}
+export default class HelloWorld extends Vue {
+  hiddenTwo = false;
+
+  get message() {
+    return this.$store.getters['istForm/getFormValue']('text-input5');
+  }
+
+  get count() {
+    return this.$store.getters['GetCount'];
+  }
+
+  incrementCount() {
+    this.$store.dispatch('incrementCount');
+  }
+}

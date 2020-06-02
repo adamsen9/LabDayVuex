@@ -1,9 +1,20 @@
 <div class="hello">
-    i am html!?=!
 
+    <div>
+        Store message:
+        <p>
+            {{message}} | {{count}}
+        </p>
+    </div>
 
-    <FormTwo></FormTwo>
+    <div>
+        <button @click="incrementCount">Increment count</button>
+    </div>
+
     <FormOne></FormOne>
+    <br>
+    <button @click="hiddenTwo = !hiddenTwo">Toggle Two</button>
+    <FormTwo v-if="!hiddenTwo"></FormTwo>
 
 
 </div>

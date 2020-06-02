@@ -10,11 +10,16 @@
   },
   "rules": {
     "indent": [true, "spaces", 2],
-    "interface-name": false,
+    "interface-name": true,
     "no-consecutive-blank-lines": false,
     "object-literal-sort-keys": false,
     "ordered-imports": false,
     "quotemark": [true, "single"],
-    "trailing-comma": false
+    "trailing-comma": false,
+    "member-access": false,
+    "whitespace": false,
+    "no-string-literal": false,
+    "no-console": false
   }
 }
+
